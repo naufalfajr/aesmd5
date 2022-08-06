@@ -4,7 +4,8 @@ import string
 
 def hashing(plain_text):
     # generate 8 byte random salt and add it to plaintext
-    salt = ''.join(secrets.choice(string.ascii_letters + string.digits) for i in range(8))
+    salt = ''.join(secrets.choice(string.ascii_letters + string.digits) for i in range(16))
+    # salt = 'informatika12345'
     plain_text = plain_text + salt
     # encode the plaintext
     plain_text = plain_text.encode()
