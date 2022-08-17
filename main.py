@@ -7,7 +7,7 @@ import time
 def main():
     print('==== AES >< MD5 ====')
     plaintext = input("Insert plaintext: ")
-    option = int(input("\n1. MD5 + AES\n2. SHA256\n3. MD5 + salt\nChoose(1, 2 or 3): "))
+    option = int(input("\n1. MD5 + AES\n2. SHA256\n3. MD5 + salt\n4. MD5\nChoose(1, 2, 3 or 4): "))
     rep = 100000 # how many times process repeated
 
     if option == 1 :
@@ -66,5 +66,8 @@ def main():
         time_elapsed = time2-time1
         print(f'Time taken to do the SHA256 process is : {time_elapsed/rep}\n')
 
+    else:
+        print('wrong input, quitting.....\n')
+        
 if __name__ == '__main__':
     main()
