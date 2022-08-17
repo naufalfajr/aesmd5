@@ -54,6 +54,17 @@ def main():
         
         time_elapsed = time2-time1
         print(f'Time taken to do the SHA256 process is : {time_elapsed/rep}\n')
+    
+    elif option == 4:
+        time1 = time.process_time()
+        for i in range(rep):
+            hash = md5.hashing(plaintext)
+        time2 = time.process_time()
+
+        print('\nHash : '+ hash + '\n')
+        
+        time_elapsed = time2-time1
+        print(f'Time taken to do the SHA256 process is : {time_elapsed/rep}\n')
 
 if __name__ == '__main__':
     main()
