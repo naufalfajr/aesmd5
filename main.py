@@ -53,7 +53,7 @@ def main():
         print('\nHash : '+ hash + '\n')
         
         time_elapsed = time2-time1
-        print(f'Time taken to do the SHA256 process is : {time_elapsed/rep}\n')
+        print(f'Time taken to do the MD5 + salt process is : {time_elapsed/rep}\n')
     
     elif option == 4:
         time1 = time.process_time()
@@ -64,10 +64,10 @@ def main():
         print('\nHash : '+ hash + '\n')
         
         time_elapsed = time2-time1
-        print(f'Time taken to do the SHA256 process is : {time_elapsed/rep}\n')
+        print(f'Time taken to do the MD5 process is : {time_elapsed/rep}\n')
 
     else:
         print('wrong input, quitting.....\n')
-        
+
 if __name__ == '__main__':
     main()
