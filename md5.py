@@ -1,8 +1,10 @@
+from ast import Bytes
 from hashlib import md5
 
 def hashing(plain_text):
     # encode the plaintext
-    plain_text = plain_text.encode()
+    if (isinstance(plain_text, str)):
+        plain_text = plain_text.encode()
     
     # do the md5 hashing
     hash = md5(plain_text)
