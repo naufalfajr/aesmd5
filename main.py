@@ -8,7 +8,7 @@ def main():
     print('==== AES >< MD5 ====')
     plaintext = input("Insert plaintext: ")
     option = int(input("\n1. MD5 + AES\n2. SHA256\n3. MD5 + salt\n4. MD5\nChoose(1, 2, 3 or 4): "))
-    rep = 1000000 # how many times process repeated
+    rep = 100000 # how many times process repeated
 
     if option == 1 :
         key = "semogasayasukses" # input("Insert key (key must be 16 char long): ")

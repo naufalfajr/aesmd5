@@ -15,7 +15,7 @@ def aes_enc(plain_text, key):
     # return cipher text
     cipher_text = cipher_config.encrypt(pad(plain_text, 16))
 
-    # return b64encode(cipher_text).decode()
+    # return b64encode(cipher_text)
     return cipher_text
 
 def aes_dec(cipher_text, key):
@@ -28,7 +28,6 @@ def aes_dec(cipher_text, key):
     # return cipher text
     plain_text = unpad(cipher_config.decrypt(cipher_text), 16)
 
-    # return plain_text.decode()
     return plain_text.decode()
 
 def main():
