@@ -4,7 +4,7 @@
     - pip install hashlib
     - pip install python-secrets
     - pip install strings
-2. run main.py file
+2. run main.py file `python3 main.py`
 
 ## Notes
 - input is plaintext
